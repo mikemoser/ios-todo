@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XYZToDoItem.h"
 
 @interface XYZAddToDoItemViewController : UIViewController
-    - (IBAction)done:(id)sender;
+    @property XYZToDoItem *toDoItem;
 @end

@@ -11,5 +11,6 @@
 @interface XYZToDoListViewController : UITableViewController
 
 - (void) receiveNewItemAddedNotification:(NSNotification *) notification;
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "XYZToDoListViewController.h"
 #import "XYZToDoItem.h"
+#import "XYZAddToDoItemViewController.h"
 
 @interface XYZToDoListViewController ()
 
@@ -23,6 +24,17 @@
 - (void) receiveNewItemAddedNotification:(NSNotification *) notification
 {
     NSLog (@"Successfully received the notification!");
+}
+
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue
+{
+    XYZAddToDoItemViewController *source = [segue sourceViewController];
+    
+    XYZToDoItem *item = source.toDoItem;
+    if (item != nil) {
+        [self.toDoItems addObject:item];
+        [self.tableView reloadData];
+    }
 }
 
 - (id)initWithStyle:(UITableViewStyle)style

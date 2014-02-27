@@ -22,6 +22,7 @@
 		F88A48BB18BD5B10008F11C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88A48BA18BD5B10008F11C4 /* Main.storyboard */; };
 		F88A48CE18BEA414008F11C4 /* XYZToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88A48CD18BEA414008F11C4 /* XYZToDoListViewController.m */; };
 		F88A48D118BEA43C008F11C4 /* XYZAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F88A48D018BEA43C008F11C4 /* XYZAddToDoItemViewController.m */; };
+		F8A4DC3718BFDADE000951BD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A4DC3618BFDADE000951BD /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		F88A48CD18BEA414008F11C4 /* XYZToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZToDoListViewController.m; sourceTree = "<group>"; };
 		F88A48CF18BEA43C008F11C4 /* XYZAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZAddToDoItemViewController.h; sourceTree = "<group>"; };
 		F88A48D018BEA43C008F11C4 /* XYZAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZAddToDoItemViewController.m; sourceTree = "<group>"; };
+		F8A4DC3618BFDADE000951BD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		F88A487818BD576F008F11C4 = {
 			isa = PBXGroup;
 			children = (
+				F8A4DC3618BFDADE000951BD /* Default-568h@2x.png */,
 				F88A488D18BD576F008F11C4 /* ToDoList */,
 				F88A48A518BD5770008F11C4 /* ToDoListTests */,
 				F88A488618BD576F008F11C4 /* Frameworks */,
@@ -233,6 +236,7 @@
 			files = (
 				F88A489218BD576F008F11C4 /* InfoPlist.strings in Resources */,
 				F88A48BB18BD5B10008F11C4 /* Main.storyboard in Resources */,
+				F8A4DC3718BFDADE000951BD /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +368,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -375,6 +380,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ToDoList/ToDoList-Prefix.pch";
 				INFOPLIST_FILE = "ToDoList/ToDoList-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
